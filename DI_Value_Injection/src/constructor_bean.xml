@@ -9,6 +9,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
+    
    		<!-- values passing using constructor only -->
    		<bean id="ccoach" class="com.ncu.constructor.CricketCoach">
    		<property name="ifortune" ref="fortune"/>
@@ -18,12 +19,7 @@
    		<constructor-arg name="add" ref="address"/>
    		</bean>
 
-   	<!-- setter injection -->
- 	<!-- <bean id="myCCoach"
- 		class="com.ncu.SI.CricketCoach">
- 		<property name="ifortune" ref="fortune"/>
-   	</bean>-->
-  	<!-- Injected beans definition here -->
+  
   	
   	<bean id="fortune"
  		class="com.ncu.constructor.Fortune">	
