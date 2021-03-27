@@ -21,12 +21,7 @@
    	<property name="add" ref="address"></property>
    	</bean>
    	
-   	<!-- setter injection -->
- 	<!-- <bean id="myCCoach"
- 		class="com.ncu.SI.CricketCoach">
- 		<property name="ifortune" ref="fortune"/>
-   	</bean>-->
-  	<!-- Injected beans definition here -->
+
   	
   	<bean id="fortune"
  		class="com.ncu.setter.Fortune">	
