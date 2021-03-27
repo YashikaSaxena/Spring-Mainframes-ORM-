@@ -9,20 +9,15 @@ public class MainApp {
 		// TODO Auto-generated method stub
 		ApplicationContext context=new ClassPathXmlApplicationContext("setter_bean.xml");
 		Coach coach=(Coach)context.getBean("ccoach");
-		//Coach coach1=(Coach)context.getBean("ccoach1");
+		System.out.println(coach.toString());
+		
 		/*System.out.println(coach.getDailyWorkout());
 		System.out.println(coach.getDailyFortune());
 		System.out.println(coach.getName());*/
-		System.out.println(coach.toString());
 		
-	/*	System.out.println("calling constructor injection");
 		
-		System.out.println(coach1.getDailyWorkout());
-		System.out.println(coach1.getDailyFortune());
-		System.out.println(coach1.getName());
-		System.out.println(coach1.toString());
-	//System.out.println(coach1.getDailyFortune());
-*/
+	
+		
 	}
 
 }
