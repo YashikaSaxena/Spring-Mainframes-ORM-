@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Define your beans here -->
+   		<!-- values passing using constructor only -->
+   		<bean id="ccoach" class="com.ncu.constructor.CricketCoach">
+   		<property name="ifortune" ref="fortune"/>
+   	   	<constructor-arg name="name" value="Yashika"/>
+   		<constructor-arg name="email" value="yashika19csu414@ncuindia.edu"/>
+   		<constructor-arg name="team_name" value="India"/>
+   		<constructor-arg name="add" ref="address"/>
+   		</bean>
+
+   	<!-- setter injection -->
+ 	<!-- <bean id="myCCoach"
+ 		class="com.ncu.SI.CricketCoach">
+ 		<property name="ifortune" ref="fortune"/>
+   	</bean>-->
+  	<!-- Injected beans definition here -->
+  	
+  	<bean id="fortune"
+ 		class="com.ncu.constructor.Fortune">	
+ 		
+  	</bean>
+  	
+  	<bean id="address" class="com.ncu.constructor.Address">
+  	<property name="city" value="xyz"/>
+  	<property name="house_no" value="13"/>
+  	<property name="state" value="abc"/>
+  	<property name="pincode" value="19864"/>
+  	
+ 
+  	
+  	</bean>
+  	
+   
+   	</beans>
