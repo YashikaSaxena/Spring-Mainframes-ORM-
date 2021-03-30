@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	    
+    <!-- Constructor Injection -->
+    
+    <bean id="customer" class="com.ncu.coll_getterSetter.Customer">
+    <property name="names">
+    <list>
+    <value>john</value>
+    <value>jack</value>
+    <value>harry</value>
+    </list>
+    </property>
+    
+    <property name="Phno">
+    <set>
+    <value>123456789</value>
+    <value>2345656789</value>
+    <value>7896789</value>
+    </set>
+    </property>
+    
+    <property name="aadharNo">
+ 	<map> 
+	<entry key="123456789" value="john"/>
+ 	<entry key="2345656789" value="jack"/>
+ 	<entry key="7896789" value="harry"/>
+	</map> 
+	</property> 
+	
+	<property name="email">
+ 	<props> 
+	<prop key="123456789" > john@gmail.com</prop>
+ 	<prop key="2345656789" >jack@gmail.com</prop>
+ 	<prop key="7896789" >harry@gmail.com</prop>
+	</props> 
+	</property>    
+    
+    <property name="address">
+    <map>
+    <entry key="123456789" value-ref="address1"></entry>
+    <entry key="2345656789" value-ref="address2"></entry>
+     <entry key="7896789" value-ref="address3"></entry>
+     
+    </map>
+    </property>
+    
+    
+    </bean>
+  	
+  	
+  	
+  	<bean id="address1" class="com.ncu.coll_getterSetter.Address">
+  	<property name="city" value="Gurgaon"/>
+  	<property name="house_no" value="461/7"/>
+  	<property name="state" value="Gurgaon"/>
+  	<property name="pincode" value="121102"/>
+  	</bean>
+  	
+  	
+  	<bean id="address2" class="com.ncu.coll_getterSetter.Address">
+  	<property name="city" value="Noida"/>
+  	<property name="house_no" value="445/7"/>
+  	<property name="state" value="UP"/>
+  	<property name="pincode" value="121402"/>
+  	</bean>
+  	
+  	
+  	<bean id="address3" class="com.ncu.coll_getterSetter.Address">
+  	<property name="city" value="Jaipur"/>
+  	<property name="house_no" value="491/7"/>
+  	<property name="state" value="Rajasthan"/>
+  	<property name="pincode" value="121302"/>
+  	</bean>
+    
+</beans>
