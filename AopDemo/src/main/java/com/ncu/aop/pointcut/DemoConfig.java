@@ -8,5 +8,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 @ComponentScan("com.ncu.aop.pointcut")
 public class DemoConfig {
+  @Bean public X x() {
+return new X();
+}
 
 }
