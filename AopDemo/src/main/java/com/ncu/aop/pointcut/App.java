@@ -8,7 +8,8 @@ public class App {
 		// TODO Auto-generated method stub
 
 		   AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(DemoConfig.class);
-	       Logic x = context.getBean("logic",Logic.class);
+	       System.out.println("Started the Program");
+		Logic x = context.getBean("logic",Logic.class);
 	       x.logicX();
 	       
 	       context.close();
