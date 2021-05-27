@@ -16,10 +16,7 @@ public class MainController {
 	public String home() {
 		return "home";
 	}
-	@RequestMapping("/login2")
-	public String login2() {
-		return "login2";
-	}
+	
 	
 	@RequestMapping("/register")
 	public String userRegistration(Model model) {
