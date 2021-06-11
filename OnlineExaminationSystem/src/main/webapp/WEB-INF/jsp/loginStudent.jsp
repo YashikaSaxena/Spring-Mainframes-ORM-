@@ -25,21 +25,34 @@ opacity:0.7;
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   font-size:20px;
+   text-align: center;
+}
 a {
   color: #41BDA4;
 }
 a:hover{
 	color:white;
-}
+} */
+
+
 </style>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+
+<title>The NorthCap University</title>
 <link href="resources\css\loginRegister.css" rel="stylesheet">
 <link href="resources\css\navbar.css" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+   
 </head>
-<body>
+<body >
 <div class="navbar">
  <a href="contact">Contact</a>
   <a href="about">About</a>
@@ -47,37 +60,30 @@ a:hover{
 
     </div>
 <div class="bg"></div>
- <div class= "bg-text"> 
-
-<h1>Sign Up</h1>
-
-<table align=center >
-<form:form action="login" method="post" modelAttribute="UserModel">
-<tr>
-<td>Name</td> 
-<td><form:input path="username"/></td>
-
-</tr>
-<tr>
-<td>Email </td>
-<td><form:input type="email" path="email"/></td>
-
-</tr>
-<tr>
-<td>Password</td> 
-<td><form:input type="password" path="password"/></td>
-</tr>
+<div class="bg-text" >
+<h1> Login In</h1>
+<table align="center">
+<form:form action="student" method="post" modelAttribute="UserModel">
 
 <tr>
-<td>Date of Birth </td>
-<td><form:input type="date" path="dob"/></td>
+<td>Email</td>
+<td><form:input path="email" type="email"/></td>
 </tr>
-<tr><td colspan=2> <div align="center"><button class="button">Submit</button></div></td></tr>
+<tr>
+<td>Password</td>
+<td><form:input path="password"  type="password"/></td>
+</tr>
+<tr><td colspan=2> <div align="center"><button class="button">Login</button></div></td></tr>
 
 </form:form>
-</table>
+  </table>
+  <div align="center">
 
-</div>
+<p class="p1">Don't have account! <a href="register"> Register</a></p>
+
+  </div>
+  
+  </div>
 <div>
 <footer >
   <p>Copyright @oes2021<br>

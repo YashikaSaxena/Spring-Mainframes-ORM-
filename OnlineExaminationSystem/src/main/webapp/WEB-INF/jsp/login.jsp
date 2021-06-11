@@ -53,17 +53,17 @@ a:hover{
    
 </head>
 <body >
-<ul>
-  <li><a class="active" href="contact">Contact</a></li>
-  
-  <li><a href="#about">About</a></li>
-  <li><a href="#home">Home</a></li>
-</ul>
+<div class="navbar">
+ <a href="contact">Contact</a>
+  <a href="about">About</a>
+ <a href="home">Home</a>
+
+    </div>
 <div class="bg"></div>
 <div class="bg-text" >
 <h1> Login In</h1>
 <table align="center">
-<form:form action="view" method="post" modelAttribute="UserModel">
+<form:form action="admin" method="post" modelAttribute="UserModel">
 
 <tr>
 <td>Email</td>
@@ -83,12 +83,12 @@ a:hover{
 
   </div>
   
- 
-
   </div>
-<div class="footer">
- <p>Copyrights @oes2021<br>
-  <a href="mailto:oes@example.com">oes@gmail.com</a></p>
+<div>
+<footer >
+  <p>Copyright @oes2021<br>
+  <a class="af" href="mailto:oes@example.com">oes@gmail.com</a></p>
+</footer>
 </div>
 </body>
 </html>
